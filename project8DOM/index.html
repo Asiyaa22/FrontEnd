@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be583a61ee.js" crossorigin="anonymous"></script>
+    <!-- <script src="dom.js"></script> -->
+</head>
+<body>
+   <div class="container">
+      <img src="asiya.png" alt="">
+      <!-- <i class="fa-solid fa heart"></i> -->
+      <i class="fa-solid fa-heart"></i>
+   </div>
+
+
+    <!-- <h1>Hello, we are learning DOM</h1> -->
+    <script>
+        var istate = document.querySelector("img");
+        var like = document.querySelector("i")
+        
+        istate.addEventListener('click', function(){
+            like.style.transform = "translate(-50%, -50%) scale(1)";
+            like.style.opacity = 0.8;
+            like.textContent = "j";
+        });
+
+
+
+        // let a = document.querySelector("h1")
+        // a.innerHTML = "we are done with it!!🚀"
+        // a.style.fontSize = "200px";
+        // a.addEventListener("click", function(){
+        //   console.log("Haan haan Hogaya bhai...!");
+        // a.textContent = "Sun sun k baate pakgayi....main tere saath ghum k thak gayi!❤💖💕";
+        // a.style.fontSize = '100px';
+        // a.style.color = 'pink';
+        // });
+        // console.log(a);
+    </script>
+</body>
+</html>

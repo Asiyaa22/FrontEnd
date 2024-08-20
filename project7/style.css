@@ -1,0 +1,113 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body, html {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    background-image: url(mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 50%; */
+}
+.nav {
+    padding: 10px 40px;
+    color: antiquewhite;
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    font-size: 18px;
+}
+span {
+    font-size: 26px;
+}
+.nav-2 {
+    /* width: ; */
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 370px;
+}
+.list {
+    display: inline-flex;
+    gap: 20px;
+    list-style: none;
+}
+.list :hover {
+    cursor: pointer;
+}
+.nav-1 :hover {
+    cursor: pointer;
+}
+.hero-txt {
+    opacity: 0.6;
+    color: white;
+    font-size: 300px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.hero-content{
+    /* background-color: aqua; */
+    /* position: absolute; */
+    /* top: 70%; */
+    width: 100vw;
+    height: calc(100vh - (9vh + 10vh));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-content h3 {
+    /* background-color: blanchedalmond; */
+    position: absolute;
+    padding: 25px;
+    top: 52%; 
+    font-size: 18px;
+    color: white;
+}
+.hero-content button{
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-weight: 800;
+    position: absolute;
+    top: 65%;
+    padding: 4px;
+    width: 12vw;
+    height: 6vh;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    position: absolute;
+    bottom: 0%;
+}
+.fa-brands {
+    /* color: antiquewhite; */
+    color: white;
+    font-size: 22px;
+    padding: 6px;
+    /* border-radius: 50%; */
+    /* border: 1px solid white; */
+}
+.count p {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    /* padding: 10px; */
+}
