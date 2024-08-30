@@ -65,8 +65,10 @@
             <i class="ri-arrow-right-s-line"></i>
         </div>
     </div>
-    <div class="aside-content">
+    <!-- <div class="hide">
         <img src="flip.png" alt="">
+    </div> -->
+    <div class="aside-content">
         <div class="aside">
             <div class="inner-txt">
                 <h2>Need Creative Design?</h2>
@@ -115,6 +117,46 @@
             percent_value.textContent = percentage + '%';
         }
         updatePercentage(40);
+        //write a code which should work lyk whenever I click anywhere on page I should be able to see or flip image
+        // var image = document.querySelector(".hide");
+        // var page = document.querySelector("body");
+        // page.style.backgroundColor = "yellow";
+        // page.addEventListener("click", function(){
+        //     image.style.visibility = "visible";
+            // alert("Iam clicked!!");
+        // });
+        //if you notice carefully the Image is actually created at that point when I click on page ryt so I have to create a img dynamically got it
+        //first point is clear
+        //secondly the image disappears lyk this chutki
+        //so maybe the image is even removed from dom got mah point
+        //lets code it obvio with the help of GPT
+        document.addEventListener('click', function(event) {
+        const img = document.createElement("img");
+        img.src = "flip.png";
+        img.classList.add('floating-img');
+
+        img.style.left = `${event.clientX - 50}px`;
+        img.style.top = `${event.clientY - 50}px`;
+        // img.style.position = 'absolute';
+
+        document.body.appendChild(img);
+
+        //random fall
+        // const randomY = Math.random() * 200 - 100;
+        // const randomRotation = Math.random() * 360;
+        
+        setTimeout(() => {
+            // img.style.transform = 'rotateY(180deg) translateY(50px)';
+            img.style.transform = 'rotateX(-180deg) translateY(-80px)';
+            // img.style.transform = `translateY(${randomY}px, 500px) rotateY(${randomRotation}deg)`;
+            img.style.opacity = '0';
+        }, 10);
+
+
+        setTimeout(() => {
+            img.remove();
+        }, 1000);
+        });
     </script>
 </body>
 </html>

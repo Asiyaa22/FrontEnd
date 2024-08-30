@@ -11,6 +11,7 @@
     height: 70px;
     width: 100%;
     padding: 10px 40px;
+    cursor: pointer;
 }
 .part-1 li {
     display: inline-flex;
@@ -122,9 +123,7 @@ color: antiquewhite;
     align-items: center;
     justify-content: space-between;
 }
-.aside-content img {
-    margin-left: 8em;
-}
+
 .aside {
     margin-right: 7em;
     padding: 3em;
@@ -202,4 +201,37 @@ footer {
     padding-top: 1em;
     border-radius: 25px;
     background-color: orange;
+}
+/* It was my tryOut with a little logic look down for actual logic😉 */
+/* .hide {
+    position: absolute;
+    animation: fall 1s infinite;
+    visibility: hidden;
+}
+.hide img {
+    width: 100px;
+    height: 100px;
+}
+@keyframes fall {
+    from {
+        transform: translatex(0%);
+        position: absolute;
+        top: 10%;
+    }
+    to {
+        transform: translateY(10%); 
+        position: absolute;
+        top: 90%;
+        opacity: 10%;
+        transform: rotateX(180deg);
+    } 
+}
+*/
+.floating-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: transform 1s, opacity 1s;
+    /* transform-origin: center;  */
+    /*perspective: 1000px; */
 }
