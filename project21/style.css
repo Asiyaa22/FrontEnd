@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-content h2 {
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-content button{
+    font-size: 22px;
+    background-color: orange;
+    width: 7em;
+    height: 2em;
+    border-radius: 0.3em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.hero-content button:hover {
+    transform: scale(110%);
+}
+.banner #dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    pointer-events: none;   
+}

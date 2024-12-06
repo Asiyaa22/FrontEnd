@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100vh;
+    width: 100%;
+}
+.container {
+    background-color: aqua;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-1 {
+    font-size: 14px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    width: 12.5em;
+    height: 2.5em;
+    padding: 10px;
+    border-radius: 4px;
+}
+#button-1 {
+   border-radius: 0px;
+   background-color: rgb(31, 27, 27); 
+   color: #fff;
+}
+#button-2 {
+    background-color: #F3A847; 
+    border: 1px solid rgb(247, 142, 62);
+    color: black;
+}
+#button-3 {
+    background-color: #fff; 
+    color: black;
+}
+#button-4 {
+    background-color: #1877F2; 
+    color: #fff;
+}

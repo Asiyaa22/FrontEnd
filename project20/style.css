@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+  /* background-color: aqua; */
+  color: #fff;
+
+}
+.nav img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.nav-1 h2 {
+    font-size: 1.2em;
+    margin-top: 1.8%;
+}
+.search-bar{
+    width: 25em;
+    height: 2.5em;
+    border-radius: 1.2em;
+    background-color: #0524086d;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-solid fa-magnifying-glass{
+    margin-top: 3%;
+}
+.nav-1 input {
+    width: 90%;
+    height: 100%;
+    border-radius: 1.2em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 2%;
+}
+.nav-1 {
+    display: inline-flex;
+    gap: 50px;
+}
+.nav-3 {
+    display: inline-flex;
+    gap: 10px;
+}
+.nav-3 h3{
+  margin-top: 10%;
+}
+main {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 80vh;
+    gap: 40px;
+    /* background-color: aquamarine; */
+}
+.side-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+    width: 6vw;
+    margin-top: 2%;
+    padding-left: 2em;
+}
+.part-1>.icons {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    background-color: rgb(51, 90, 74);
+    border-radius: 3em;
+    width: 3em;
+    padding: 20px 0;
+}
+.left-Content {
+   width: 40em;
+   height: 100%;
+   /* background-color: aqua; */
+}
+.left-Content h2 {
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 3%;
+}
+.pages {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 8vh;
+    /* background-color: pink; */
+    font-size: 1em;
+    margin-bottom: 2%;
+}
+.pages a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.pages a:nth-child(1){
+    background-color: rgb(14, 19, 17);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 4em;
+    height: 2em;
+    border-radius: 3em;
+}
+.pages a:nth-child(2){
+    background-color: rgb(14, 19, 17);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 8em;
+    height: 2em;
+    border-radius: 3em;
+}
+.pages a:nth-child(3){
+    background-color: rgb(14, 19, 17);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 8em;
+    height: 2em;
+    border-radius: 3em;
+}
+.pages a:nth-child(4){
+    background-color: rgb(14, 19, 17);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 8em;
+    height: 2em;
+    border-radius: 3em;
+}
+.info {
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(14, 19, 17);
+    padding: 12px;
+    border-radius: 1.7em;
+    margin-bottom: 2%;
+}
+.info-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+.elem-2 {
+    display: inline-flex;
+    gap: 10px;
+}
+.graph {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(14, 19, 17);
+    border-radius: 1.7em;
+    padding: 16px 14px 16px 14px;
+
+}
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btm-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 35vh;
+    width: 100%;
+}
+.history {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+.total-1 {
+    background-color: rgb(14, 19, 17);
+    height: 47%;
+    width: 100%;
+    border-radius: 1.7em;
+    padding: 16px 14px 16px 14px;
+}
+.total-1>h3,h4 {
+    margin-bottom: 2%;
+}
+.right-content {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.cards-container {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
